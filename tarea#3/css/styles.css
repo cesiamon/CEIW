@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+header {
+    height: 400px;
+    position: relative;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+}
+
+.info {
+    position: absolute;
+    color: aliceblue;
+    font-family: "Caveat Brush", cursive;
+    left: 50%;
+    top: 30%;
+}
+
+.butcherman-regular {
+    font-family: "Butcherman", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .jolly-lodger-regular {
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  #email, #button{
+    width: 700px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  #button{
+    font-weight:600;
+    background-color: rgb(122, 20, 218);
+    color: aliceblue;
+    font-size: 23px;
+  }
+  
+  .frijole-regular {
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cocteles{
+    margin-bottom: 0px;
+  }
+
+  .cocteles h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .cocteles p {
+    font-size: 20px;
+  }
+
+  .coctelInfo{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contelesdivdelosdiv div{
+    margin-bottom: 50px;
+  }
+
+  .coctelesImgs img {
+    clip-path: circle(40% at 50% 50%);
+    height: 300px;
+  }
+  
+  .aperitivos h3{
+    font-family: "Frijole", system-ui;
+  }
+
+  .aperitivos p{
+    font-family: "Roboto", sans-serif;
+  }
+
+  .aperitivos div{
+    height: 400px;
+    width: 400px;
+    margin-bottom: 250px;
+  }
+
+  .aperitivos img {
+    height: 100%; /* La imagen tomará el 100% de la altura del contenedor */
+    width: 100%; /* La imagen tomará el 100% del ancho del contenedor */
+    object-fit: cover; /* La imagen se ajustará al tamaño del contenedor sin distorsión */
+  }
+
+  .aperitivos span {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+
+  .provecho{
+    padding-bottom: 80px;
+  }
+  /* whatssap */
+#whatsapp-button img{
+  height: 63px;
+}
+
+#whatsapp-button a {
+  display: inline-block;
+  background-color: #efc9b400;
+  border-radius: 50px;
+  animation: pulse 5s infinite alternate;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#whatsapp-button a:hover {
+  transform: scale(2.5); 
+  
+}
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 70px; 
+  right: 20px; 
+  z-index: 1000;
+  height: 120px;
+  
+}
+
+  /* Estilos para el botón */
+  #scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #8b80805a;
+    color: rgb(225, 131, 9);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    animation: pulse 1.5s ;
+    z-index: 9999;
+}
+
+/* Estilos de animación para el botón */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.fin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.redes{
+  margin-top: 50px;
+  width: 200px;
+}
+
+.redes i{
+  font-size: 50px;
+  cursor: pointer;
+  
+}
+
+.buttonsHeaderDiv1{
+ font-size: 33px;
+ width: 420px;
+ /* background-color: azure; */
+ display: flex;
+ flex-direction: row;
+ align-items: start;
+ justify-content: space-between;
+}
+
+.buttonsHeaderDiv a{
+  font-family: "Jolly Lodger", system-ui;
+  padding: 9px;
+  border-radius: 30px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.menuButton a{
+  font-family: "Jolly Lodger", system-ui;
+  padding: 8px;
+  border-radius: 30px;
+  color: aliceblue;
+  background-color: rgb(90, 88, 88);
+  font-size: 33px;
+  width: 170px;
+  text-align: center;
+}
+
+.menuButton {
+  width: 420px; 
+  display: flex;
+  justify-content: center;
+  margin-top:30px ;
+}
+
+a {
+  cursor: pointer;
+  background-color: #FF914D;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(230, 73, 73, 0.1);
+}
+
+a:hover {
+  transform: scale(1.1);
+}

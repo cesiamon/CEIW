@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CENFOTEC-PROFEFRANK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <body>
+    <header >
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                <img src="./imagenes/logoUni.jpeg" alt="Logo">
+              </a>
+              <!-- Botón del navbar en pantallas pequeñas -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Elementos del menú -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#QuiénesSomos">Quiénes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div id="banner" class="carousel carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active wow animate__animated animate__fadeIn" data-wow-delay="2s">
+              <img src="./imagenes/westgraduados.jpg" class="d-block w-100" alt="Grupos graduacion ultimo nivel con gabardina">
+            </div>
+            <div class="carousel-item wow animate__animated  animate__fadeIn" data-wow-delay="2s">
+              <img src="./imagenes/westkids.jpg" class="d-block w-100" alt="Grupo quinto nivel con camisas negras ">
+            </div>
+            <div class="carousel-item wow animate__animated  animate__fadeIn" data-wow-delay="2s">
+              <img src="./imagenes/westkids4.jpg" class="d-block w-100" alt="Grupo de primaria con unirforme blanco con cafe">
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </header>
+
+<!-- Cuadros verdes -->
+    <section>
+        <div class="container-fluid">
+          <div class="row no-gutters justify-content-center align-items-center">
+            <!-- Columna 1 -->
+            <div class="col-md-3">
+                <div class="position-relative">
+                  <img src="./imagenes/talking.jpg" class="img" alt="Personal hablando">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 img-overlay"></div> 
+                  <div class="img-text">
+                    <h3>Cursos de Idiomas</h3>
+                  </div>
+                </div>
+              </div>
+            <!-- Columna 2 -->
+            <div class="col-md-3">
+                <div class="position-relative">
+                    <img src="./imagenes/intercambio.jpeg" class="img" alt="Imagen 2">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 img-overlay"></div> <!-- Capa de fondo transparente -->
+                    <div class="img-text">
+                        <h3>Intercambio Estudiantil</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="col-md-3">
+                <div class="position-relative">
+                  <img src="./imagenes/diploma.jpg" class="img" alt="Imagen 3">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 img-overlay"></div> <!-- Capa de fondo transparente -->
+                  <div class="img-text">
+                    <h3>Intercambio estudiantil</h3>
+                </div>
+                </div>
+            </div>
+
+            <!-- Columna 4 -->
+            <div class="col-md-3">
+                <div class="position-relative">
+                    <img src="./imagenes/kidsclassroom.jpeg" class="img" alt="Imagen 4">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 img-overlay"></div> <!-- Capa de fondo transparente -->
+                    <div class="img-text">
+                        <h3>Gera K-12</h3>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+<!-- Sobre Nosotros -->
+<style>
+  /* Estilo para la animación */
+  .modal.fade .modal-dialog {
+      transform: scale(0.1);
+      transition: all 0.3s ease;
+    }
+    /* Cambia el tamaño del modal al abrir */
+    .modal.show .modal-dialog {
+      transform: scale(1);
+    }
+
+    /* Estilos para el contenido del modal */
+    .modal-content {
+      background-color: #f8f9fa; /* Color de fondo */
+      color: #333; /* Color del texto */
+      border-radius: 20px; /* Bordes redondeados */
+    }
+
+    .modal-body {
+      font-size: 16px; /* Tamaño de fuente */
+    }
+
+    .modal-body h2 {
+      color: #168749; /* Color del título */
+    }
+
+    p {
+      line-height: 1.6; /* Altura de línea */
+    }
+
+    /* Estilos para hacer el modal más accesible */
+    .modal-dialog {
+      max-width: 90%; /* Ancho máximo del modal */
+    }
+
+  
+
+    
+</style>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">West College Costa Rica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center align-items-center">
+          <iframe src="https://lottie.host/embed/d54fa0cf-7ea1-465a-aab7-84eaa16f9de9/3z9NRyJ2NH.json" style="height: 300px;"></iframe>
+        </div>
+        <h2>Excelencia Academica</h2>
+        <p>El West College es una institución educativa Bilingüe que nació con la inquietud de un grupo de docentes con amplia experiencia en su labor y grandes expectativas de brindar, excelencia académica, atención personalizada y la implementación de la escuela modelo, inspirada en una estrategia pedagógica sistémica e investigativa, que privilegia la formación con calidad humana. <br><br> Hasta el presente ha graduado generaciones propias y profesionales competentes en el país.  <br><br> Obteniendo siempre el 100% de desempeño en los exámenes del Ministerio de Educación y de las Universidades Estatales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+    <div class="container aboutUs mb-5">
+      <div class="row ">
+        <!-- Columna izquierda con imagen y párrafo -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center mt-4">
+          <img src="./imagenes/logo2.png" class="" style="height: 95px;" alt="Imagen">
+          <!-- <h1 class="fw-bold mb-4 " style="font-style: italic">35 años enseñándote a triunfar.</h1> -->
+          
+        </div>
+        <!-- Columna derecha con dos párrafos -->
+        <div class="col-md-6">
+          <p class="mt-4" style="font-size: 20px; font-weight: 500 ; letter-spacing: 0.1em;">Sobre Nosotros</p>
+            <p class=" lh-base mb-4" style="font-size: 34px; font-weight: 600">Somos uno de los colegios académicos más grandes y diversos en Costa Rica.</p>
+            <p class="  " style="line-height: 1.5; font-size: 18px; font-weight: 400;">Nuestro enfoque innovador y atención personalizada han graduado generaciones de profesionales competentes, con un desempeño del 100% en exámenes nacionales.</p>
+            
+            <a href="#" type="button" class="btn-vermas mt-4 text-center" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Ver más</a>        
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Oferta academica -->
+<section class="container">
+    <h2 class="text-center">Oferta Académica</h2>
+<hr class="mx-auto mb-4 hr" >
+
+
+    <div class="container">
+        <div class=" row">
+          <div class="col-md-4">
+            <div class="card border-0 ">
+              <img src="imagenes/nina.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center" style="background-color: rgba(83, 171, 95, 0.12);">
+                <h3 class="card-title ">Preescolar</h3>
+                <p class="card-text">Despierta el potencial desde temprana edad en nuestro preescolar.</p>
+                <a href="#" class="btn btn-success mt-2 mb-2 bntAccesibles" >Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="imagenes/ninos.png" class="card-img-top" alt="...">
+              <div class="card-body text-center" style="background-color: rgba(83, 171, 95, 0.12);">
+                <h3 class="card-title">Primaria</h3>
+                <p class="card-text">Disfruta de un gran inicio en nuestra primaria, donde cada niño se divierte aprendiendo.</p>
+                <a href="#" class="btn btn-success mt-2 mb-2 bntAccesibles">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img src="imagenes/chicos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body text-center" style="background-color: rgba(83, 171, 95, 0.12);">
+                <h3 class="card-title">Secundaria</h3>
+                <p class="card-text">Preparándote para el futuro con una educación integral y excelentes docentes.</p>
+                <a href="#" class="btn btn-success mt-2 mb-2 bntAccesibles">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+
+</section>
+
+<!-- Guarderia -->
+<div class="container  mt-5 mb-5">
+    <div class="row guarderia">
+      <!-- Columna izquierda con imagen -->
+      <div class="col-md-6">
+        <img src="https://www.eichiquilin.com/web/wp-content/uploads/2016/06/chiquilin_como-saber-si-una-guarderia-es-buena.jpg" class="img-fluid" alt="Imagen">
+      </div>
+      <!-- Columna derecha con contenido -->
+      <div class="col-md-6">
+        <div>
+          <h2 class="fw-bold guarderiah2">Guardería West Steps</h2>
+          <h3 style="font-weight: 500; color: #30933E ;font-size: 25px; letter-spacing: 2px;">Espacios Disponibles 2024</h3>
+          <p class="mt-4 mb-3" style="font-size: 20px; font-weight: 300;line-height: 1.7;">Nuestra guardería ofrece un ambiente cálido y acogedor donde los niños pueden explorar, aprender y crecer. <br> fomentando su crecimiento físico, emocional y cognitivo desde una edad temprana."
+
+          </p>
+          <p class="mb-4" style="font-size: 18px; font-weight: 500;">Horario: Lunes - Viernes 2:00 p.m. a 5:00 p.m.</p>
+          <a href="#" class="btn btn-success bntAccesibles">Reserva Ahora</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Blog -->
+<div class="container mt-5 mb-5 ">
+    <div class="row ">
+      <div class="col-md-12 d-flex ">
+        <h2>Nuestro Blog</h2>
+        <hr class=" mx-2 hr2">
+
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-4 ">
+        <img src="imagenes/ss2.png" class="img-fluid imgBlog" alt="Imagen 1">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/ss3.png" class="img-fluid imgBlog" alt="Imagen 2">
+      </div>
+      <div class="col-md-4">
+        <img src="imagenes/ss1.png" class="img-fluid imgBlog" alt="Imagen 3">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <a href="#" style="color: #30933E; font-size: 23px; font-weight: 500; " class="bntAccesibles">Ver más</a>
+      </div>
+    </div>
+</div>
+
+<!-- Contactenos -->
+<div class="container-fluid" style="background-color: #cde4d0;"  >
+    <div class="row">
+    
+      <div class="col-md-6 col-xl-6 ">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d502998.2654318746!2d-84.175062!3d9.961062!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fbe8763739dd%3A0x94d248533f9aa886!2sWest%20College!5e0!3m2!1ses!2sus!4v1708544816036!5m2!1ses!2sus" width="100%" height="100%"  allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <style>
+        .map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.bg-dark .map-container iframe {
+  object-fit:cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+      </style>
+
+      <div class="col-md-6 ">
+         <!-- Formulario de contacto -->
+        
+         <div class="container-fluid">
+
+  <div class="row"  >
+
+    <div class="col-md-12"  >
+      <div class="card container-fluid" style="background-color: #cde4d0; border: none;">
+        <div class="card-body">
+          <h2 class="text-center mb-2 mt-2">Contáctanos</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label" style="color: black; font-weight: 500;">Nombre</label>
+              <input placeholder="Nombre de pila" type="text" id="name" class="form-control border-0 border-bottom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label" style="color: black; font-weight: 500;">Correo Electrónico</label>
+              <input placeholder="xxx@mail.com" type="email" id="email" class="form-control border-0 border-bottom" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label" style="color: black; font-weight: 500;">Mensaje</label>
+              <textarea placeholder="Escribe tu mensaje" id="message" class="form-control border-0 border-bottom" rows="5" required></textarea>
+            </div>
+            <div class="text-center mb-3">
+              <button type="submit" class="btn btn-success bntAccesibles">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+        
+
+       
+
+    </div>
+</div>
+  
+  
+<!-- Foooter -->
+<footer class="container-fluid  pt-2 pb-5" style="background-color: rgba(2, 39, 7, 0.78);">
+
+  <div class="container mt-5 d-flex justify-content-evenly ">
+    <div class="row ">
+
+      <!-- Columna izquierda -->
+      <div class="col-md-6 ">
+        <div class="d-flex carta ">
+          <div class="d-flex align-content-start my-2">
+            <i class="fas fa-envelope-open fa-3x me-3 text-white "></i> 
+          </div>
+          <div class="text-white px-2">
+            <h3>Suscríbete a nuestro boletín informativo</h3>
+            <p style="font-size: 18px;" class="mt-2">Recibe novedades de nuestro calendario y boletín mensual.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center ">
+        <form class="d-flex suscribete ">
+          <input class="form-control me-2" style="border: none; "  type="search" placeholder="Escribe tu correo electrónico" aria-label="Search">
+          <button class="btn btn-success" type="submit">Suscríbete</button>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <hr class="mx-2 bg-success mt-5 mb-5" style="border-top: 2px solid #02ff23; width: 800px;">
+  </div>
+
+<div class="">
+
+  <div class="row d-flex justify-content-center mt-3 footer1" >
+    
+
+    <!-- Columna 1 -->
+    <div class="col-md-2 footer2">
+      <h4 class="footerColor mb-4">Sobre Nosotros</h4>
+      <p style="color: aliceblue; letter-spacing: 1px; font-size: 14px;" class="mb-4">25 años de experiencia cosechando éxitos, excelencia académica y un enfoque pedagógico propio.</p>
+      <div>
+        <i class="fab fa-facebook icono" style="color: aliceblue;"></i>
+        <i class="fab fa-twitter icono" style="color: aliceblue;"></i>
+        <i class="fab fa-instagram icono" style="color: aliceblue;"></i>
+        <i class="fab fa-linkedin icono" style="color: aliceblue;"></i>
+      </div>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="col-md-2">
+      <h4 class="footerColor mb-4" >Enlaces</h4>
+      <ul class="custom-list">
+        <li >Home</li>
+        <li>Sobre Nosotros</li>
+        <li>Oferta Academia</li>
+        <li>Guardería</li>
+        <li>Blog</li>
+        <li>Contacto</li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="col-md-2">
+      <h4 class="footerColor mb-4" >Programas</h4>
+      <ul class="custom-list">
+        <li>Preescolar</li>
+        <li>Primaria</li>
+        <li>Secundaria</li>
+      </ul>
+    </div>
+
+    <!-- Columna 4 -->
+    <div class="col-md-3">
+      <h4 class="footerColor mb-4" >Horario</h4>
+      <p style="color: #e0e1e2;">Mon - Wed: 09.00 AM - 02.00 PM</p>
+      <p style="color: #e0e1e2;">Thu - Fri: 10.00 AM - 01.00 PM</p>
+      <p style="color: aliceblue;">Saturday: 09.00 AM - 02.00 PM</p>
+      <p style="color: aliceblue;">Sunday: Closed</p>
+    </div>
+
+  </div>
+
+</div>
+
+</footer>
+
+
+<script>
+  new WOW().init();
+</script>
+
+<script src="js/fslightbox.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.nav-link').click(function(){
+    $('.nav-link').removeClass('active'); // Elimina la clase 'active' de todos los elementos nav-link
+    $(this).addClass('active'); // Agrega la clase 'active' al elemento nav-link clicado
+  });
+});
+
+</script>
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<!-- Wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

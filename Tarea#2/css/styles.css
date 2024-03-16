@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+}
+
+.navbar-brand img {
+    max-height: 90px; 
+  }
+
+  .nav-item{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    
+  }
+
+  .no-gutters > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+
+  }
+
+  .img-overlay {
+    background-color: rgba(6, 66, 14, 0.78); 
+    cursor: pointer;
+  }
+
+  .img-overlay2 {
+    background-color: rgba(44, 69, 47, 0.45);
+    cursor: pointer;
+  }
+
+  .img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .aboutUs{
+    padding: 65px;
+  }
+
+  .btn-vermas{
+    /* height: 40px; */
+    border-radius: 5px;
+    width: 130px;
+    padding: 18px;
+    font-weight: 600;
+    color: aliceblue;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #53AB5F; 
+  }
+
+  .instalaciones{
+    top: 30%;
+    left: 30%;
+  }
+
+  .card-text{
+    font-size: 18px;
+  }
+
+  .hr {
+    border-top: 9px solid #166320; 
+    width: 120px;
+  }
+
+  .hr2 {
+    border-top: 2px solid #166320; 
+    width: 1080px;
+  }
+
+  .form1 {
+    padding: 30px;
+    
+  }
+
+  .footerColor {
+    color:#02ff24be ;
+  }
+
+  ul.custom-list li::marker {
+    color: #02ff24be;
+  }
+
+  ul.custom-list li {
+    color: #e0e1e2;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: calc(1em - 32px);
+  }
+
+  .bntAccesibles {
+    padding: 9px; letter-spacing: 1px; font-weight: 500;
+  }
+
+  .icono {
+    color: #e0e1e2;
+    font-size: 28px;
+    letter-spacing: 15px;
+  }
+  .imgLogo{
+    height: 95px;
+  }
+
+  .suscribete{
+    background-color: white; padding: 15px; width: 400px; border-radius: 3px;
+  }
+
+  .carta{
+    margin-top: 70px;
+    margin-top: 70px;
+  }
+
+  .nav-link {
+    transition: color 0.5s, border-bottom-color 0.5s ease; 
+  }
+  
+  .nav-link.active {
+    color: rgb(17, 118, 17) !important; /* Cambia el color a verde */
+    font-weight: bold;
+    border-bottom: 2px solid green; /* Agrega una línea inferior verde */
+  }
+
+ 
+  .img-overlay::before,
+  .img-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); /* Degradado de negro a transparente de abajo hacia arriba */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Transición suave para la opacidad */
+  }
+  
+  .img-overlay:hover::before {
+    opacity: 1; /* Mostrar el degradado al pasar el ratón */
+  }
+  
+  .img-text:hover::before {
+    opacity: 0; /* Mantener el fondo de img-text sin cambios al pasar el ratón */
+  }
+  
+
+  @media only screen and (max-width: 740px) {
+
+    .aboutUsSection{
+      margin-left: 10px;
+      margin-right: 30px;
+     
+      
+    }
+
+    .imgLogo{
+      padding: 5px;
+    }
+
+    .card{
+      margin-bottom: 10px;
+      padding: 10px;
+
+    }
+
+    .guarderia{
+      padding: 20px;
+    }
+
+    .guarderiah2{
+      margin-top: 25px;
+    }
+
+    .imgBlog{
+      padding: 20px;
+    }
+
+    .suscribete{
+      padding: 10px; 
+      width: 300px;
+    }
+
+    .carta{
+      margin-top: 10px;
+    }
+
+    .footer1{
+      padding: 40px;
+    }
+
+    .footer2{
+      margin-bottom: 30px;
+    }
+
+    .nav-link.active {
+      color: rgb(17, 118, 17) !important; /* Cambia el color a verde */
+      font-weight: bold;
+      border-bottom: 2px solid green; /* Agrega una línea inferior verde */
+      width: 19%;
+      
+    }
+  }
